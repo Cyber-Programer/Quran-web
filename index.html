@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57f9449c90.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="raper">
+        <form  class="main">
+            <h2>Quran Verse Viewer</h2>
+            <div class="inputs">
+                <div class="inp">
+                    <input type="radio" name="searchType" id="num" value="num">
+                    <label for="num" id="label-1">Find with sura number</label>
+                </div>
+    
+                <div class="inp">
+                    <input type="radio" name="searchType" id="sura" value="sura">
+                    <label for="sura">Find with sura name</label>
+                </div>
+    
+                <div class="search">
+                    <!-- <label for="sura">Enter you Surah name or number</label> -->
+                    <input type="text" name="user-inp" id="user-inp" placeholder="Enter surah name..." spellcheck="false">
+                    <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <!-- <hr style="display: none;"> -->
+                <div id="suggestions" class="suggestions"></div>
+
+                <input type="number" name="verseNum" id="verseNum" placeholder="Enter surah ayat number...">
+
+
+                <input type="submit" name="sb" id="btn">
+                
+            </div>
+            
+        </form>
+        
+    </section>
+
+    <section class="result">
+        <div class="box">
+            <h1>Details</h1>
+            <div class="details">
+                <h4 id="name">Name: <span id="namesp"></span> </h4>
+                <h4 id="arbinm">Arbi Name: <span id="arnamesp"></span>  </h4>
+                <h4 id="type">Surah Type: <span id="typesp"></span> </h4>
+                <h4 id="totalVerses">Total Verses: <span id="taotalsp"></span>  </h4>
+                <h4 id="verses">Bangla Verse: <span id="ayatspn"></span> </h4>
+                <h4 id="verses">Arbi Verse: <span id="ayatspn2"></span> </h4>
+            </div>
+
+            <a id="back">Back</a>
+        </div>
+    </section>
+
+    <section class="supportResult" draggable="true">
+        <p></p>
+        <p id="close">Close</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
